@@ -1,0 +1,180 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	line-height:1.6;
+	background-color:	#202020;
+	margin:0;
+	font-family:"Montserrat","Avenir";
+}
+
+
+.modall{
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	height: 100%;
+	width:100%;
+	overflow:auto;
+	background:rgba(0,0,0,0.5);
+}
+
+.modall-content{
+	background: #FF5F6D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	margin: 25% auto;
+	width:70%;
+	box-shadow:0 5px 8px rgba(0,0,0,0.2),0 7px 20px rgba(0,0,0,0.17);
+	animation-name:modalopen;
+	animation-duration:.9s;
+}
+
+.model-header{
+	background: #ff4b1f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+border-radius: 5%;
+	padding:15px;
+	color:#fff;
+	text-align:center;
+}
+
+.model.header h2,.model.footer h3{
+	margin:0;
+}
+
+.model-body{
+	padding: 10px 20px;
+	
+}
+
+
+
+.model-footer{
+	background: #ff4b1f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius:5%;
+	padding: 10px;
+	color:#fff;
+	text-align:center;
+}
+@keyframes modalopen{
+	from{opacity:0}
+	to{opacity:1}
+}
+.closeBtn{
+	color:#ccc;
+	float:right;
+	font-size:30px;
+	text-decoration:none;
+	color:#fff;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+#container{
+	max-width: 600px;
+	margin: 20px auto;
+}
+.square{
+	height: 30%;
+	width: 30%;
+	margin : 1.66%;
+	padding-bottom: 30%;
+	background:red;
+	float:left;
+	border-radius:15%;
+	transition:0.6s;
+	--webkit-transition: background 0.6s;
+	--moz-transition: background 0.6s;
+	transform-style: preserve-3d;
+}
+.square:after {
+	top: -10%;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	background: #3a9999;
+	border-radius: 5px;
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+
+.square:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-20deg) translateY(-10%);
+}
+
+
+.gamebtn{
+	border:none;
+	background:none;
+	font-family:"Montserrat","Avenir";
+	text-transform:uppercase;
+	height:100%;
+	font-weight: 700;
+	text-decoration:none;
+	color:white;
+	letter-spacing:1px;
+	font-size:inherit;
+	transition: all .3s;
+	--webkit-transition: all 0.6s;
+	--moz-transition: all 0.6s;
+	outline:none;
+}
+
+#stripe{
+	background:rgb(200, 86, 151,.9);
+	height:30px;
+	text-align:center;
+	color:black;
+}
+#message{
+	display:inline-block;
+	width:20%;
+}
+.gamebtn:hover{
+	color:red;
+	background:black;
+}
+
+h1{
+	text-align:center;
+	color:white;
+	background: steelblue;
+	margin:0;
+	font-weight:normal;
+	text-transform:uppercase;
+	line-height:1.1;
+	padding:20px 0;
+}
+#reset{
+	text-transform:uppercase:
+}
+#colorDisplay{
+	color:white;
+	font-size:200%;
+}
+.selected{
+	background:red;
+}
+
+#audio{
+	position:fixed;
+	bottom:20px;
+	z-index: 1;
+	display:block;
+	border:25px;
+	border-radius:50px;
+	padding:20px;
+	margin:20px;
+}
